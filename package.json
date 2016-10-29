@@ -9,10 +9,16 @@
   "author": "Antônio Bruno G S",
   "license": "ISC",
   "devDependencies": {
+    "glob": "^7.1.1",
     "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-watch": "^4.3.10",
     "node-sass": "^3.10.1",
+    "path": "^0.12.7",
     "sass-loader": "^4.0.2",
-    "susy": "^2.2.12",
-    "webpack": "^1.13.2"
+    "gulp-util": "~3.0.4"
   }
 }

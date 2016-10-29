@@ -1,0 +1,15 @@
+.row {
+	@include flex-container();
+
+	[class *="grid-"]:first-child {
+		margin-left: 0;
+	}
+
+	[class *="grid-"]:last-child {
+		margin-right: 0;
+	}
+
+	@include breakpoint($tablet) {
+		@include flex-container(column wrap);
+	}
+}

@@ -1,0 +1,22 @@
+$susy: (	
+	container: auto,
+	columns: 24,
+	gutters: 20px/30px,
+	column-width: 30px,
+	math: static,
+	output: float,
+	debug: (image: show),
+	gutter-position: split,
+);
+
+$container: container();
+$columns: map-get($susy, columns);
+$gutter: gutter();
+
+[class *="grid-"] {
+	margin-left: $gutter;
+	margin-right: $gutter;
+}
+
+
+@import 'grids/1200';
