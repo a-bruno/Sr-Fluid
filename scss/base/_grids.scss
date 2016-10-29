@@ -18,5 +18,46 @@ $gutter: gutter();
 	margin-right: $gutter;
 }
 
+.container-#{$columns},
+.container-fluid {
+	@include ctn-auto();
+	padding: 0 10px;
+}
 
-@import 'grids/1200';
+	.container-#{$columns} {
+		width: container();
+	}
+
+	.container-fluid {
+		max-width: container();
+	}
+
+/* gerar grid-static e fluída */
+@for $i from 1 through $columns {
+
+	.grid-#{$i} {
+		width: span($i);
+	}
+
+	.fluid-#{$i} {
+		width: 100% / $columns * $i;
+
+		@include breakpoint($tablet) {
+			width: 100%;	
+		}
+	}
+
+}
+
+/* Golden Ratio Grid */
+.ratio-A {
+	width: 61.8%;
+}
+
+.ratio-B {
+	width: 38.2%;
+}
+
+.grid-full {
+	width: 1180px;
+}
