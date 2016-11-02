@@ -851,9 +851,18 @@ template {
 @font-face {
   font-family: "Steinem Unicode";
   color: #fff;
-  src: url("../fonts/steinem/steinem-unicode.eot");
-  src: url("../fonts/steinem/steinem-unicode.eot?#iefix") format("embedded-opentype"), url("../fonts/steinem/steinem-unicode.woff2") format("woff2"), url("../fonts/steinem/steinem-unicode.woff") format("woff"), url("../fonts/steinem/steinem-unicode.ttf") format("truetype"), url("../fonts/steinem/steinem-unicode.svg") format("svg");
+  src: url("../fonts/steinem/steinem-unicode-regular.eot");
+  src: url("../fonts/steinem/steinem-unicode-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/steinem/steinem-unicode-regular.woff2") format("woff2"), url("../fonts/steinem/steinem-unicode-regular.woff") format("woff"), url("../fonts/steinem/steinem-unicode-regular.ttf") format("truetype"), url("../fonts/steinem/steinem-unicode-regular.svg") format("svg");
   font-weight: 400;
+  font-style: normal;
+}
+/* Myriad Pro Light */
+@font-face {
+  font-family: "Myriad Pro";
+  color: #fff;
+  src: url("../fonts/myriad-pro/myriad-pro-light.eot");
+  src: url("../fonts/myriad-pro/myriad-pro-light.eot?#iefix") format("embedded-opentype"), url("../fonts/myriad-pro/myriad-pro-light.woff2") format("woff2"), url("../fonts/myriad-pro/myriad-pro-light.woff") format("woff"), url("../fonts/myriad-pro/myriad-pro-light.ttf") format("truetype"), url("../fonts/myriad-pro/myriad-pro-light.svg") format("svg");
+  font-weight: 300;
   font-style: normal;
 }
 .row {

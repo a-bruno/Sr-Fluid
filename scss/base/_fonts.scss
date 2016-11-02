@@ -5,5 +5,8 @@
 @include fontFace('Steinem', 'steinem-bold', 'steinem', 700);
 @include fontFace('Steinem Roman', 'steinem-roman-italic', 'steinem');
 @include fontFace('Steinem Roman', 'steinem-roman', 'steinem');
-@include fontFace('Steinem Unicode', 'steinem-unicode', 'steinem');
+@include fontFace('Steinem Unicode', 'steinem-unicode-regular', 'steinem');
+
+/* Myriad Pro Light */
+@include fontFace('Myriad Pro', 'myriad-pro-light', 'myriad-pro', 300);
 
