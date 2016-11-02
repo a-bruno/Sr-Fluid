@@ -19,7 +19,7 @@
 	}
 }
 
-@mixin flex-container($flex: '', $just-cont: '', $algn-cont: '', $algn-itm: '') {
+@mixin flexContainer($flex: '', $just-cont: '', $algn-cont: '', $algn-itm: '') {
 	display: flex;
 
 	@if $flex != '' {
@@ -41,7 +41,7 @@
 	/*PS.: flex-flow (flex-direction | flex-wrap). */
 }
 
-@mixin flex-item($order: '', $flex: '', $algn-s: '') {
+@mixin flexItem($order: '', $flex: '', $algn-s: '') {
 	
 	@if $order != '' {
 		order: $order;
@@ -60,3 +60,22 @@
 
 	/*PS.: flex (flex-grow | flex-shrink | flex-basis)*/
 }
+
+@mixin fontFace($name, $fileName, $path, $weight: 400, $style: normal) {
+
+	@font-face {
+	    font-family: $name;
+	    color: #fff;
+
+	    src:	url('#{$fontsPath}#{$path}/#{$fileName}.eot');
+	    src:	url('#{$fontsPath}#{$path}/#{$fileName}.eot?#iefix') format('embedded-opentype'),
+	    url('#{$fontsPath}#{$path}/#{$fileName}.woff2') format('woff2'),
+	    url('#{$fontsPath}#{$path}/#{$fileName}.woff') format('woff'),
+	    url('#{$fontsPath}#{$path}/#{$fileName}.ttf') format('truetype'),
+	    url('#{$fontsPath}#{$path}/#{$fileName}.svg') format('svg');
+	    font-weight: $weight;
+	    font-style: $style;
+  }
+
+}
+

@@ -1,0 +1,9 @@
+// Include for fonts family.
+
+/* Steinem font type */
+@include fontFace('Steinem', 'steinem-bold-italic', 'steinem', 700, italic);
+@include fontFace('Steinem', 'steinem-bold', 'steinem', 700);
+@include fontFace('Steinem Roman', 'steinem-roman-italic', 'steinem');
+@include fontFace('Steinem Roman', 'steinem-roman', 'steinem');
+@include fontFace('Steinem Unicode', 'steinem-unicode', 'steinem');
+

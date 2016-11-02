@@ -1,5 +1,5 @@
 .row {
-	@include flex-container();
+	@include flexContainer();
 
 	[class *="grid-"]:first-child {
 		margin-left: 0;
@@ -10,6 +10,6 @@
 	}
 
 	@include breakpoint($tablet) {
-		@include flex-container(column wrap);
+		@include flexContainer(column wrap);
 	}
 }

@@ -12,6 +12,7 @@ var concat = require('gulp-concat');
 var notify = require('gulp-notify');
 var glob = require('glob');
 var gulpUtil = require('gulp-util');
+var svgSprite = require('gulp-svg-sprite');
 
 var paths = {
 
@@ -20,10 +21,29 @@ var paths = {
 		file: 'scss/style.scss',
 		scss: 'scss',
 		css: 'css',
-		img: '',
-		svg: ''
+		svg: 'svg'
 	}
 
+};
+
+var configSVG = {
+	shape: {
+        dimension: {
+            maxWidth: 62,
+            maxHeight: 62
+        }
+	},
+	mode: {
+		symbol: {
+			dest: 'svg',
+			sprite: 'symbols.svg',
+			example: true
+		},
+		svg: {
+			xmlDeclaration: false,
+			doctypeDeclaration: false
+		}	
+	}
 };
 
 gulp.task('watch', function() {
@@ -31,6 +51,12 @@ gulp.task('watch', function() {
     gulp.watch( [paths.default.scss+'/**/*.scss'] , function(event) {
 		gulpUtil.log('File '+ event.path +' was '+ event.type +', running tasks...');
 		gulp.start('compass');
+    });
+
+
+    gulp.watch( [paths.default.svg+'/**/*.svg'] , function(event) {
+    	gulpUtil.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+    	gulp.start('svg-sprites');
     });
 
 });
@@ -41,12 +67,18 @@ gulp.task('compass', function() {
 		css: paths.default.css,
 		sass: paths.default.scss,
 		comments: false,
-		style: 'compressed',
+		//style: 'compressed',
 		require: ['susy', 'breakpoint'],
 		sourcemap: true
 	}))
-	.pipe(minifyCSS())
+	//.pipe(minifyCSS())
 	.pipe(gulp.dest(paths.default.css))
 	.pipe(notify('Compilado com sucesso!'));
+});
+
+gulp.task('svg-sprites', function(){
+    return gulp.src(paths.default.svg+'/**/*.svg')
+		.pipe(svgSprite(configSVG))
+	    .pipe(gulp.dest('.'))
 });
 
