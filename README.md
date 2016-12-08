@@ -18,19 +18,9 @@ Sr Fluid é uma arquitetura de pastas/arquivos para trabalhar com desenvolviment
   - ...
   
   * Arquiterua de pastas SCSS
-    ### appearence
-      -blocks.scss;
-      -buttons.scss
-    ### base
-      -config.scss;
-      -fonts.scss;
-      -functions.scss;
-      -grids.scss;
-      -mixins.scss;
-      -reset.scss;
-      -svg.scss
-    ### other
-      -normalize.scss
+    ### appearence (SCSS para aparências iniciais ou padrões)
+    ### base (SCSS para instruraração e funções)
+    ### other (SCSS de componentes adicionais ao projeto)
   
 ## Arquivos para trabalhar com font types
   - Exemplos de como inserir e converter corretamente os arquivos de font-family no projeto;
