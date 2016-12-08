@@ -19,16 +19,16 @@ Sr Fluid é uma arquitetura de pastas/arquivos para trabalhar com desenvolviment
   
   * Arquiterua de pastas SCSS
     ### appearence
-      -_blocks.scss
-      -_buttons.scss
+      -blocks.scss;
+      -buttons.scss
     ### base
-      -_config.scss
-      -_fonts.scss
-      -_functions.scss
-      -_grids.scss
-      -_mixins.scss
-      -_reset.scss
-      -_svg.scss
+      -config.scss;
+      -fonts.scss;
+      -functions.scss;
+      -grids.scss;
+      -mixins.scss;
+      -reset.scss;
+      -svg.scss
     ### other
       -normalize.scss
   
