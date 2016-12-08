@@ -3,11 +3,12 @@
 Sr Fluid é uma arquitetura de pastas/arquivos para trabalhar com desenvolvimento Frontend. O meu objetivo é disponibilizar métodos e práticas que adquiri durante o periódo que trabalhei para a - Bleez Agência Digital. 
 
 ## Workflow 
-  - Gulp
+  - Gulp;
   
 ## SVG 
-  - Otimização e boilerplate para criação de SVG 
-  - Alguns conceitos adquiridos no curso de SVG (http://willianjusten.teachable.com/p/aprendendo-svg-do-inicio-ao-avancado)
+  - Otimização e boilerplate para criação de SVG;
+  - Alguns conceitos adquiridos no curso de SVG (http://willianjusten.teachable.com/p/aprendendo-svg-do-inicio-ao-avancado);
+  - Alumas fonts já inseridas/renderizadas como default de desenvolvimento.
 
 ## SCSS/CSS
   - Boas práticas de desenvolvimento;
@@ -16,6 +17,22 @@ Sr Fluid é uma arquitetura de pastas/arquivos para trabalhar com desenvolviment
   - Funções;
   - ...
   
-## Arquivos para trabalhar com font
+  * Arquiterua de pastas SCSS
+    ### appearence
+      -_blocks.scss
+      -_buttons.scss
+    ### base
+      -_config.scss
+      -_fonts.scss
+      -_functions.scss
+      -_grids.scss
+      -_mixins.scss
+      -_reset.scss
+      -_svg.scss
+    ### other
+      -normalize.scss
+  
+## Arquivos para trabalhar com font types
   - Exemplos de como inserir e converter corretamente os arquivos de font-family no projeto;
-  - Website para converter arquivo de font type nas estenções necessárias (https://www.fontsquirrel.com/);
+  - Website para converter arquivo de font type nas estenções necessárias (https://www.fontsquirrel.com/).
+  
