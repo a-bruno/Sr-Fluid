@@ -2,7 +2,7 @@
 
 Sr Fluid é uma arquitetura de pastas/arquivos para trabalhar com desenvolvimento Frontend. O meu objetivo é disponibilizar métodos e práticas que adquiri durante o periódo que trabalhei para a - Bleez Agência Digital. 
 
-### Workflow 
+* Workflow 
   - Gulp
   
 ## SVG 
